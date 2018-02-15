@@ -43,3 +43,68 @@ Writing objects: 100% (5/5), 7.88 KiB | 3.94 MiB/s, done.
 Total 5 (delta 0), reused 0 (delta 0)
 To https://github.com/marwagaser/Individual-Tasks-S0.git
  * [new branch]      master -> master
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ git branch ReadMe
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ git checkout ReadMe
+Switched to branch 'ReadMe'
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (ReadMe)
+$ git add README.md
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (ReadMe)
+$ git status
+On branch ReadMe
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        AllMyCommands.txt
+
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (ReadMe)
+$ git commit -m"Add:Adding README file"
+[ReadMe 2bdafc1] Add:Adding README file
+ 1 file changed, 14 insertions(+)
+ create mode 100644 README.md
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (ReadMe)
+$ ls
+AllMyCommands.txt  file1.txt  file2.txt  file3.txt  README.md
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (ReadMe)
+$ git checkout master
+Switched to branch 'master'
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ ls
+AllMyCommands.txt  file1.txt  file2.txt  file3.txt
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ git merge ReadMe
+Updating 4c9fffd..2bdafc1
+Fast-forward
+ README.md | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+ create mode 100644 README.md
+
+
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ git add AllMyCommands.txt
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ git commit -m"Add:Adding all commands used to create and amend this repo"
+[master 838775c] Add:Adding all commands used to create and amend this repo
+ 1 file changed, 45 insertions(+)
+ create mode 100644 AllMyCommands.txt
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
