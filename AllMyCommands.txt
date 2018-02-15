@@ -1,0 +1,45 @@
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ git init
+Initialized empty Git repository in C:/Users/HP/Desktop/S0_SE/.git/
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ git add file1.txt
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ git add file2.txt
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ git add file3.txt
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ git rm --cached file2.txt
+rm 'file2.txt'
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ git add file2.txt
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ git commit -m"Add: Adding 3 files about Git usage to the repo"
+[master (root-commit) 4c9fffd] Add: Adding 3 files about Git usage to the repo
+ 3 files changed, 89 insertions(+)
+ create mode 100644 file1.txt
+ create mode 100644 file2.txt
+ create mode 100644 file3.txt
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ git remote add origin https://github.com/marwagaser/Individual-Tasks-S0.git
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ git remote -v
+origin  https://github.com/marwagaser/Individual-Tasks-S0.git (fetch)
+origin  https://github.com/marwagaser/Individual-Tasks-S0.git (push)
+
+HP@marwagaser MINGW64 ~/Desktop/S0_SE (master)
+$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 7.88 KiB | 3.94 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/marwagaser/Individual-Tasks-S0.git
+ * [new branch]      master -> master
